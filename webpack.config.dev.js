@@ -33,10 +33,10 @@ const conf = Object.assign({}, baseConf, {
     rules: [
       ...baseConf.module.rules,
       {
-        test: /\.(sa|sc|c)ss$/,
+        test: /\.css$/i,
         use: [
           "style-loader", // creates style nodes from JS strings
-          { loader: 'css-loader', options: { importLoaders: 1 } },
+          "css-loader",
           "postcss-loader"
           //"sass-loader" // compiles Sass to CSS, using Node Sass by default
         ]

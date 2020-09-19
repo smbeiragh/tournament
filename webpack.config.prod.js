@@ -25,20 +25,9 @@ const conf = Object.assign({}, baseConf, {
       {
         test: /\.css$/i,
         use: [
-          {
-            loader: MiniCssExtractPlugin.loader,
-            options: {
-              hmr: false
-            }
-          },
-          {
-            loader: 'css-loader',
-            options: {
-              importLoaders: 1
-            }
-          },
+          MiniCssExtractPlugin.loader,
+          "css-loader",
           "postcss-loader"
-          // "sass-loader" // compiles Sass to CSS, using Node Sass by default
         ]
       },
       {
