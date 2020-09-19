@@ -1,0 +1,31 @@
+.c-tournament {
+    @apply p-1 flex flex-row items-center relative;
+}
+
+.c-tournament__info {
+    @apply pl-3;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.c-tournament__title {
+    @apply whitespace-no-wrap text-sm text-gray-800 font-medium;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.c-tournament__desc {
+    @apply whitespace-no-wrap text-xs text-gray-600 font-light pl-4;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.c-tournament__image {
+    width: 2rem;
+    height: 2rem;
+}
+
+.c-tournament__removeBtn.c-tournament__removeBtn {
+   @apply absolute right-0 top-0;
+   transform: translate(50%, -50%);
+}

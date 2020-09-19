@@ -1,0 +1,17 @@
+.favTransition-enter {
+    opacity: 0.01;
+}
+
+.favTransition-enter.favTransition-enter-active {
+    opacity: 1;
+    transition: opacity 300ms ease-in;
+}
+
+.favTransition-exit {
+    opacity: 1;
+}
+
+.favTransition-exit.favTransition-exit-active {
+    opacity: 0.01;
+    transition: opacity 300ms ease-in;
+}

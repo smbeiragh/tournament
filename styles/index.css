@@ -1,0 +1,20 @@
+@import "~tailwindcss/dist/base.css";
+
+/* Write your own custom base styles here */
+body {
+    background-color: theme('colors.gray.100');
+    @apply font-sans;
+}
+
+/* Start purging... */
+@import "~tailwindcss/dist/components.css";
+/* Stop purging. */
+
+/* Write you own custom component styles here */
+@import "components/index.css";
+
+/* Start purging... */
+@import "~tailwindcss/dist/utilities.css";
+/* Stop purging. */
+
+/* Your own custom utilities */
